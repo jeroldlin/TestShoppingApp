@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS Document */
+body{	background-image:	url("indexBG.jpg");
+		height:		100%;
+		font-family: arial;
+		margin:		0;}
+
+#top {			background-image:	url("Top.jpg");
+				background-size:	100% 100%;
+				position:			fixed;
+				top:				0px;
+				width:				100%;
+				height:				10vh;}
+
+#landing{		background-image:	url("landingBG.jpg");
+				background-size:	100% 100%;
+				background-repeat:	no-repeat;}
+
+#landingCenter{	background-image:	url("LandingCenter.jpg");
+				height:				55vh;
+				margin-top:			10vh;
+				width:				100%;
+				background-repeat:	no-repeat;
+				background-size:	100% 100%;}
+
+
+#landingEnter{	background-image:	url("landingBG.jpg");
+				padding:			1vh 0px 0px 0px;
+				width:				100%;
+				font-size:			5vh;
+				color:				rgb(0,133,185);
+				text-align:			center;
+				height:				30vh;}
+				
+#landingFooter{	height:				4vh;
+				text-align:			center;
+				color:				white;
+				padding: 			0px 0px 0px 0px;}
+				
+				
+#landingButton{	background-color:	white;
+				font-weight:		bold;
+				font-size:			2.5vh;
+				color:				rgb(0,133,185);
+				box-shadow: 		0px 0px 25px 5px rgb(0,133,185);
+				padding:			1.5vh 0px 0px 0px;
+				margin:				2vh;
+				width: 				11vh;
+				height:				11vh;
+				border:				0px;
+				border-radius: 		100px;}
+
+#landingFooter a:link{	color:	white;}
+#landingFooter a:visited{	color:	white;}
+#landingFooter a:hover{	color:	white;}
+#landingFooter a:active{	color:	white;}
+
+.enteredTop {	background-image:url('TopYourBluelightDeals.jpg');
+				background-size:	100% 100%;
+				position:			fixed;
+				width:				100%;
+				height:				13vh;
+				z-index:			1;}
+
+#index{			background-image:	url("indexBG.jpg");
+				background-repeat:	repeat;
+				display:			;}
+
+#indexCenter{	padding:	100vh 0px 18vh 0px;
+				width: 		90vw;
+				overflow: 	scroll;
+				margin:		auto;}
+
+#indexCenter a:link{	text-decoration:	none;}
+#indexCenter a:visited{	text-decoration:	none;}
+#indexCenter a:hover{	text-decoration:	none;}
+#indexCenter a:active{	text-decoration:	none;}
+
+#indexFooter{	background-image:	url("indexBG.jpg");
+				font-size:			2vh;
+				text-align:			center;
+				height:		 		17vh;
+				width:				100vw;
+				top:		 		85vh;
+				position:			fixed;}
+				
+#seeDealButton{ background-color: 	rgb(47,188,219);
+				color:				white;
+				font-size:			2.5vh;
+				width:				50vw;
+				border:				0px;
+				margin:				5vh 0 0 0;
+				padding:			1vh 0.5vh 0.5vh 0.5vh;}
+
+.categories {	width:		40vw;
+				height:		40vw;
+				margin: 	2vw 2vw;
+				float:		left;
+				position:	relative;
+				font-size:	2.7vh;
+				display:	table-cell;
+				border: 	1px solid black;
+				box-shadow: 5px 5px 20px grey;}
+
+.categorySelection{		top:				33vw;
+						left:				33vw;
+						height:				5vw;
+						width:				5vw;
+						border:				1px solid rgb(0,133,185);
+						border-radius: 		100px;
+						position:			absolute;}
+				
+.categorySelected-true{		background-color:	rgb(0,133,185);}
+.categorySelected-false{	background-color:	white;}
+
+.categoryText{	margin:		10px;}
+
+
+#yourDeals{		background-image:	url("indexBG.jpg");
+				background-repeat:	repeat;
+				display:			none;}
+				
+#yourDealsButton{	width:		49.5vw;
+					height:		3.5vh;
+					top:		13vh;
+					position:	fixed;
+					text-align:	center;
+					color:		white;
+					font-size:	2.3vh;
+					padding:	0.5vh 0 0 0;
+					background-color:	rgb(47,188,219);
+					border-top:		2px solid lightgrey;
+					border-right:	2px solid lightgrey;
+					display:	;
+					z-index:	1;}
+
+#savedDealsButton{	width:		49.5vw;
+					height:		3.5vh;
+					top:		13vh;
+					left:		50vw;
+					position:	fixed;
+					text-align:	center;
+					color:		white;
+					font-size:	2.3vh;
+					padding:	0.5vh 0 0 0;
+					background-color:	rgb(0,133,185);
+					border-top:		2px solid lightgrey;
+					display:	;
+					z-index:	1;}
+				
+#dealsCenter{	padding:	20vh 0px 2vh 0px;
+				width: 		90vw;
+				overflow: 	scroll;
+				margin:		auto;}
+				
+.items{				background-color:	white;
+					opacity:			0;
+					width:				87vw;
+					height:				0vh;
+					margin: 			2vw 2vw;
+					float:				left;
+					position:			relative;
+					font-size:			2vh;
+					display:			table-cell;
+					border: 			1px solid rgb(47,188,219);}
+
+.itemImage{			width:				12vh;
+					height:				12vh;
+					top:				2.1vh;
+					left:				2vh;
+					position:			absolute;
+					border: 			1px solid transparent;}
+
+.itemPrice{			width:				45vw;
+					height:				5vh;
+					top:				1.5vh;
+					left:				38vw;
+					font-size:			5vh;
+					color:				rgb(0,133,185);
+					position:			absolute;
+					border: 			1px solid transparent;}
+				
+.itemPriceSymbol{	width:				10vw;
+					height:				5vh;
+					top:				1.5vh;
+					left:				35vw;
+					font-size:			3vh;
+					color:				rgb(0,133,185);
+					position:			absolute;
+					border: 			1px solid transparent;}
+
+.itemTitle{			width:				30vw;
+					height:				2.1vh;
+					top:				6.5vh;
+					left:				35vw;
+					font-size:			2vh;
+					font-weight:		bold;
+					color:				rgb(47,188,219);
+					position:			absolute;
+					overflow:			hidden;
+					border: 			1px solid transparent;}
+
+.itemDescription{	width:				45vw;
+					height:				2.3vh;
+					top:				8.5vh;
+					left:				35vw;
+					font-size:			2vh;
+					color:				grey;
+					position:			absolute;
+					overflow:			hidden;
+					border: 			1px solid transparent;}
+
+.itemSave-true{		width:				10vw;
+					height:				2vh;
+					top:				14vh;
+					left:				70vw;
+					font-size:			2vh;
+					color:				grey;
+					position:			absolute;
+					overflow:			hidden;
+					border: 			1px solid transparent;}
+					
+.itemBar{			width:				4vw;
+					height:				17vh;
+					top:				0vh;
+					left:				83vw;
+					position:			absolute;
+					overflow:			hidden;
+					background-color:	rgb(47,188,219);}
+					
+.itemBarCorner{		width:				0vw;
+					height:				0vh;
+					top:				6.5vh;
+					border-top: 		1.5vh solid transparent;
+					border-left: 		2vh solid white;
+					border-bottom: 		1.5vh solid transparent;
+					left:				82.5vw;
+					position:			absolute;}
+					
+.saveDealStar-true{	background-image:	url('star-empty.png');
+					background-size:	100% 100%;
+					width:				2vh;
+					height:				2vh;
+					top:				14vh;
+					left:				66vw;
+					position:			absolute;
+					overflow:			hidden;
+					border: 			1px solid transparent;}
+					
+.theDealTop{	background-image:	url("TopCheckItem.jpg");
+				background-size:	100% 100%;
+				position:			fixed;
+				top:				0px;
+				width:				100%;
+				height:				10vh;}
+
+#checkDeal{		background-image:	url("indexBG.jpg");
+				background-repeat:	repeat;
+				display:			none;}
+				
+#dealCenter{	padding:	11vh 0px 2vh 0px;
+				width: 		90vw;
+				height:		87vh;
+				overflow: 	scroll;
+				margin:		auto;}
+				
+.checking-item{		background-color:	white;
+					top:				300px;
+					opacity:			0;
+					width:				87vw;
+					height:				82vh;
+					margin: 			2vh 1vw 0 1vw;
+					float:				left;
+					position:			relative;
+					font-size:			2vh;
+					display:			table-cell;
+					border: 			1px solid rgb(47,188,219);}
+
+				
+.checking-itemImage{			width:				12vh;
+								height:				12vh;
+								top:				2.1vh;
+								left:				2vh;
+								position:			absolute;
+								border: 			1px solid rgb(47,188,219);}
+
+.checking-itemPrice{			width:				45vw;
+								height:				5vh;
+								top:				1.5vh;
+								left:				38vw;
+								font-size:			5vh;
+								color:				rgb(0,133,185);
+								position:			absolute;
+								border: 			1px solid rgb(47,188,219);}
+				
+.checking-itemPriceSymbol{	width:				10vw;
+							height:				5vh;
+							top:				1.5vh;
+							left:				35vw;
+							font-size:			3vh;
+							color:				rgb(0,133,185);
+							position:			absolute;
+							border: 			1px solid rgb(47,188,219);}
+
+.checking-itemTitle{			width:				30vw;
+								height:				2.1vh;
+								top:				6.5vh;
+								left:				35vw;
+								font-size:			2vh;
+								font-weight:		bold;
+								color:				rgb(47,188,219);
+								position:			absolute;
+								overflow:			hidden;
+								border: 			1px solid rgb(47,188,219);}
+
+.checking-itemDescription{	width:				45vw;
+							height:				2.3vh;
+							top:				8.5vh;
+							left:				35vw;
+							font-size:			2vh;
+							color:				grey;
+							position:			absolute;
+							overflow:			hidden;
+							border: 			1px solid rgb(47,188,219);}
+
+.checking-itemSave-true{		width:				10vw;
+								height:				2vh;
+								top:				14vh;
+								left:				70vw;
+								font-size:			2vh;
+								color:				grey;
+								position:			absolute;
+								overflow:			hidden;
+								border: 			1px solid rgb(47,188,219);}
+					
+.checking-saveDealStar-true{	background-image:	url('star-empty.png');
+								background-size:	100% 100%;
+								width:				2vh;
+								height:				2vh;
+								top:				14vh;
+								left:				66vw;
+								position:			absolute;
+								overflow:			hidden;
+								border: 			1px solid rgb(47,188,219);}
+								
+.checking-itemSaveButton{		background-color: 	rgb(0,133,185);
+								text-align:			center;
+								top:				25vh;
+								left:				23vw;
+								color:				white;
+								font-size:			2.5vh;
+								width:				40vw;
+								border:				0px;
+								position:			absolute;
+								margin:				5vh 0 0 0;
+								padding:			1vh 0.5vh 0.5vh 0.5vh;}

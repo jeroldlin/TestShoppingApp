@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="blueLightApp">
+<head>
+<!-- 
+   
+   Author: Jerry Lin          
+
+-->
+   <title>K mart Blue Light</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <link type="text/css" href="Style.css" rel="stylesheet" />
+   <script src="jquery.min.js" type="text/javascript"></script>
+   <script src="angular.min.js"></script>
+   <script src="categoryController.js" type="text/javascript"></script>
+</head>
+
+<body >
+<div ng-controller="CategoryController as product">
+	<div id="yourDealsButton" ng-click="product.goToDeals()">Your Deals</div>
+	<div id="savedDealsButton">Saved Deals</div>
+	<div id="index">
+		<div class="enteredTop" style="background-image:url('TopYourFavorites.jpg');"></div>
+
+		<div id="indexCenter" >
+			<div ng-repeat="category in product.categories" ng-click="product.pickCategory($index)">
+				<div class="categories" style="{{category.style}}">
+					<div class="categoryText">
+						{{category.text}}
+					</div>
+					<button class="categorySelection categorySelected-{{category.selected}}"></button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="indexFooter" >
+			<button id="seeDealButton" ng-click="product.goToDeals()">SEE MY DEALS!</button>
+		</div>
+	</div>
+	
+	<div id="yourDeals">
+		<div class="enteredTop" ng-click="product.gotoCategories()"></div>
+
+		<div id="dealsCenter" >
+			<div ng-repeat="selectedItem in product.selectedItems" ng-click="product.goToTheDeal($index)">
+				<div class="items">
+					<img class="itemImage" src=""></img>
+					<div class="itemPriceSymbol">$</div>
+					<div class="itemPrice">{{selectedItem.price}}</div>
+					<div class="itemTitle">{{selectedItem.title}}</div>
+					<div class="itemDescription">{{selectedItem.description}}</div>
+					<div class="saveDealStar-true"></div>
+					<div class="itemSave-true">Save</div>
+					<div class="itemBar">
+					</div>
+					<div class="itemBarCorner">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="checkDeal" onchange="myFunction()">
+		<div class="theDealTop" ng-click="product.goToDeals()"></div>
+	
+		<div id="dealCenter" >
+			<div ng-repeat="theSelectedItem in product.theSelectedItems">
+				<div class="checking-item">
+					<img class="checking-itemImage" src=""></img>
+					<div class="checking-itemPriceSymbol">$</div>
+					<div class="checking-itemPrice">{{theSelectedItem.price}}</div>
+					<div class="checking-itemTitle">{{theSelectedItem.title}}</div>
+					<div class="checking-itemDescription">{{theSelectedItem.description}}</div>
+					<div class="checking-saveDealStar-true"></div>
+					<div class="checking-itemSave-true">Save</div>
+					<div class="checking-itemSaveButton">SAVE DEAL</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
