@@ -79,9 +79,9 @@ body{	background-image:	url("indexBG.jpg");
 #indexFooter{	background-image:	url("indexBG.jpg");
 				font-size:			2vh;
 				text-align:			center;
-				height:		 		17vh;
+				height:		 		14vh;
 				width:				100vw;
-				top:		 		85vh;
+				bottom:		 		0px;
 				position:			fixed;}
 				
 #seeDealButton{ background-color: 	rgb(47,188,219);
